@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property >
+	<name>hbase.rootdir</name>
+	<value>hdfs://ring:9000/hbase</value>
+</property>
+<property>
+	<name>hbase.tmp.dir</name>
+	<value>/usr/local/hadoop_repo/hbase/tmp</value>
+</property>
+<property>
+	<name>hbase.cluster.distributed</name>
+	<value>true</value>
+</property>
+<property>
+	<name>hbase.zookeeper.quorum</name>
+	<value>ring</value>
+</property>
+<property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/usr/local/hadoop_repo/hbase/zk</value>
+</property>
+<property>
+    <name>hbase.rpc.timeout</name>
+    <value>1440000</value>
+</property>
+<property>
+	<name>zookeeper.session.timeout</name>
+	<value>90000</value>
+</property>
+<property>
+    <name>hbase.zookeeper.property.tickTime</name>
+    <value>9000</value>
+</property>
+<property>
+	<name>hbase.regionserver.restart.on.zk.expire</name>
+	<value>true</value>
+</property>
+<property>
+    <name>hbase.master.info.port</name>
+    <value>60010</value>
+</property>
+</configuration>
